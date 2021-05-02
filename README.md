@@ -39,8 +39,7 @@ Using Haskell Stack and VSCode
                             - **my-project** is the name to be used for the topmost folder/directory for the package.
                             - **simple** is the name of a template to use.
                         - This creates te following structure.
-```
-$ tree my-project
+```$ tree my-project
 ./my-project/
 ├── LICENSE
 ├── my-project.cabal
@@ -56,8 +55,7 @@ $ tree my-project
 This will install a version of GHC (Glasgow Haskell Compiler). The feedback text will differ.
                      
 
-```
-$ stack setup
+```$ stack setup
 Downloaded lts-3.1 build plan.    
 Caching build plan
 Fetched package index.
@@ -68,20 +66,17 @@ stack will use a locally installed GHC
 For more information on paths, see 'stack path' and 'stack exec env'
 To use this GHC and packages outside of a project, consider using:
 stack ghc, stack ghci, stack runghc, or stack exec
-
 ```
 ### Run GHCI (a REPL interpreter)
 Feedback text will differ slightly.
                         - 
-```
-$ stack ghci
+```$ stack ghci
 Configuring GHCi with the following packages: my-project
 GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
 ```
  
  - GHCI will start up, and a REPL prompt will appear.
  
-
 `*Main> `
 
 ### Play Around (then :quit GHCI)
