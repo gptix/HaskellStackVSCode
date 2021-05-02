@@ -1,14 +1,14 @@
 Using Haskell Stack and VSCode
 =====
 # Linux
-- These instructions are specific to Ubuntu 20.04, but should be similar for other Linux systems, and relevant web pages probably clarify.
-- ## Stack 
- - Stack is a tool for creation of Haskell projects (a file structure to contain code, and settings useful for compilation).
-- Website:  https://docs.haskellstack.org/en/stable/README/
- - ## install
-- ### Script-based install
-- From the website:
-### How to install
+These instructions are specific to Ubuntu 20.04, but should be similar for other Linux systems, and relevant web pages probably clarify.
+## Stack 
+Stack is a tool for creation of Haskell projects (a file structure to contain code, and settings useful for compilation).
+Website:  https://docs.haskellstack.org/en/stable/README/
+### install
+#### Script-based install
+From the website:
+**How to install**
 Stack can be installed on most Unix-like (Un*x) operating systems, including macOS, and on Windows.
 For most Un*x operating systems, the easiest way to install is to run:
 
@@ -17,7 +17,7 @@ For most Un*x operating systems, the easiest way to install is to run:
 or:
 
 `wget -qO- https://get.haskellstack.org/ | **sh**`
-- Alternative, manual installation
+#### Alternative, manual installation
 Installation instructions for generic Linux (incluing Ubuntu)
 https://docs.haskellstack.org/en/stable/install_and_upgrade/#linux
 - use installer
@@ -64,7 +64,6 @@ $ tree my-project
 ### Install GHC
 This will install a version of GHC (Glasgow Haskell Compiler). The feedback text will differ.
                      
-
 ```shell
 $ stack setup
 Downloaded lts-3.1 build plan.    
