@@ -1,44 +1,44 @@
 Using Haskell Stack and VSCode
 =====
-- # Linux
-    - These instructions are specific to Ubuntu 20.04, but should be similar for other Linux systems, and relevant web pages probably clarify.
-    - ## Stack 
-        - Stack is a tool for creation of Haskell projects (a file structure to contain code, and settings useful for compilation).
-        - Website:  https://docs.haskellstack.org/en/stable/README/
-            - ## install
-                - ### Script-based install
-                    - From the website:
-                        - ### How to install
-                            - Stack can be installed on most Unix-like (Un*x) operating systems, including macOS, and on Windows.
-                            - For most Un*x operating systems, the easiest way to install is to run:
-                            - `curl -sSL https://get.haskellstack.org/ | **sh**`
-                            - or:
-                            - `wget -qO- https://get.haskellstack.org/ | **sh**`
-                - Alternative, manual installation
-                    - Installation instructions for generic Linux (incluing Ubuntu)
-                        - https://docs.haskellstack.org/en/stable/install_and_upgrade/#linux
-                        - use installer
-                        - unzip/extract folder to Desktop
-                        - `mv ~/Desktop/stack-VERSION-NAME ~/.local/bin/` 
-                        - `cd ~/.local/bin/`
-                        - `sudo apt-get install g++ gcc libc6-dev libffi-dev libgmp-dev make xz-utils zlib1g-dev git gnupg netbase`
+# Linux
+- These instructions are specific to Ubuntu 20.04, but should be similar for other Linux systems, and relevant web pages probably clarify.
+- ## Stack 
+ - Stack is a tool for creation of Haskell projects (a file structure to contain code, and settings useful for compilation).
+- Website:  https://docs.haskellstack.org/en/stable/README/
+ - ## install
+- ### Script-based install
+- From the website:
+### How to install
+- - Stack can be installed on most Unix-like (Un*x) operating systems, including macOS, and on Windows.
+- - For most Un*x operating systems, the easiest way to install is to run:
+- - `curl -sSL https://get.haskellstack.org/ | **sh**`
+- - or:
+- - `wget -qO- https://get.haskellstack.org/ | **sh**`
+- Alternative, manual installation
+-  Installation instructions for generic Linux (incluing Ubuntu)
+- https://docs.haskellstack.org/en/stable/install_and_upgrade/#linux
+- use installer
+- unzip/extract folder to Desktop
+- `mv ~/Desktop/stack-VERSION-NAME ~/.local/bin/` 
+- `cd ~/.local/bin/`
+- `sudo apt-get install g++ gcc libc6-dev libffi-dev libgmp-dev make xz-utils zlib1g-dev git gnupg netbase`
             - ## Test Install
-                - `stack`
-                - A couple of pages of stack documentation should appear.
+- `stack`
+- A couple of pages of stack documentation should appear.
             - ## Uninstall as necessary
-                - (ref: https://github.com/commercialhaskell/stack/issues/3563)
-                - `rm -rf ~/.stack`
-                - `rm -rf /usr/.local/bin/stack-VERSION-NAME/`
-                - Perhaps also `.stack-work/`  folders in any of your Haskell projects.
-                - (https://github.com/commercialhaskell/stack/issues/3563)
-                - ## First Project
-                    - ### Create new project
-                        - `$ stack new my-project simple`
-                            - **stack** is the basic command.
-                            - **new** tells stack to create a new set of files.
-                            - **my-project** is the name to be used for the topmost folder/directory for the package.
-                            - **simple** is the name of a template to use.
-                        - This creates te following structure.
+- (ref: https://github.com/commercialhaskell/stack/issues/3563)
+- `rm -rf ~/.stack`
+- `rm -rf /usr/.local/bin/stack-VERSION-NAME/`
+- Perhaps also `.stack-work/`  folders in any of your Haskell projects.
+- (https://github.com/commercialhaskell/stack/issues/3563)
+## First Project
+- ### Create new project
+- `$ stack new my-project simple`
+- - **stack** is the basic command.
+- - **new** tells stack to create a new set of files.
+- - **my-project** is the name to be used for the topmost folder/directory for the package.
+- - **simple** is the name of a template to use.
+- This creates te following structure.
 ```$ tree my-project
 ./my-project/
 ├── LICENSE
@@ -69,7 +69,7 @@ stack ghc, stack ghci, stack runghc, or stack exec
 ```
 ### Run GHCI (a REPL interpreter)
 Feedback text will differ slightly.
-                        - 
+- 
 ```$ stack ghci
 Configuring GHCi with the following packages: my-project
 GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
