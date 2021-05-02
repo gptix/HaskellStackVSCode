@@ -40,8 +40,8 @@ rm -rf /usr/.local/bin/stack-VERSION-NAME/
 Perhaps also `.stack-work/`  folders in any of your Haskell projects.
 (https://github.com/commercialhaskell/stack/issues/3563)
 
-## First Project
-### Create new project
+### First Project
+#### Create new project
 `$ stack new my-project simple`
 **stack** is the basic command.
 **new** tells stack to create a new set of files.
@@ -61,7 +61,7 @@ $ tree my-project
 └── stack.yaml.lock
 ```
 
-### Install GHC
+#### Install GHC
 This will install a version of GHC (Glasgow Haskell Compiler). The feedback text will differ.
                      
 ```shell
@@ -90,7 +90,7 @@ GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
  
 `*Main> `
 
-### Play Around (then :quit GHCI)
+#### Play Around (then :quit GHCI)
 ```shell
 *Main> 17
 17
@@ -101,11 +101,11 @@ True
 *Main> :quit
 $ 
 ```
-### Compile an executable
+#### Compile an executable
 ```$ cd my-project 
 $ stack build
 ```
-### Execute the executable
+#### Execute the executable
                         
 ```shell
 $ stack exec my-project
