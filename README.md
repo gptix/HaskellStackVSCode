@@ -81,8 +81,7 @@ GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
 
 ### Play Around (then :quit GHCI)
                         - 
-```
-*Main> 17
+```*Main> 17
 17
 *Main> 17 + 42
 59
@@ -94,14 +93,12 @@ $
 
 ### Compile an executable
                         - 
-```
-$ cd my-project 
+```$ cd my-project 
 $ stack build
 ```
 ### Execute the executable
                         
-```
-$ stack exec my-project
+```$ stack exec my-project
 Hello World!
 ```
 
@@ -112,6 +109,7 @@ Hello World!
 ## On Unbuntu (I know, Ubuntu)
 - "The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to download and install the [.deb package (64-bit)](https://go.microsoft.com/fwlink/?LinkID=760868)"
 ### Install
+
 `$ sudo apt install ./<file>.deb`
 
 ### Run
