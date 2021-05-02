@@ -56,6 +56,7 @@ $ tree my-project
                         - This will install a version of GHC (Glasgow Haskell Compiler). The feedback text will differ.
                      
 
+```
 $ stack setup
 Downloaded lts-3.1 build plan.    
 Caching build plan
@@ -66,17 +67,23 @@ Installed GHC.
 stack will use a locally installed GHC
 For more information on paths, see 'stack path' and 'stack exec env'
 To use this GHC and packages outside of a project, consider using:
-stack ghc, stack ghci, stack runghc, or stack exec```
+stack ghc, stack ghci, stack runghc, or stack exec
+
+```
                     - ### Run GHCI (a REPL interpreter)
                         - Feedback text will differ slightly.
-                        - ```shell
+                        - 
+```
 $ stack ghci
 Configuring GHCi with the following packages: my-project
-GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help```
-                            - GHCI will start up, and a REPL prompt will appear.
+GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
+```
+ 
+ - GHCI will start up, and a REPL prompt will appear.
                         - `*Main> `
                     - ### Play Around (then :quit GHCI)
-                        - ```shell
+                        - 
+```
 
 *Main> 17
 17
@@ -85,13 +92,18 @@ GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help```
 *Main> 3 == 3
 True
 *Main> :quit
-$ ```
+$ 
+```
+
                     - ### Compile an executable
-                        - ```shell
+                        - 
+```
 $ cd my-project 
-$ stack build```
+$ stack build
+```
                     - ### Execute the executable
-                        - ```shell
+                        
+```
 $ stack exec my-project
 Hello World!```
         - ## VSCode
