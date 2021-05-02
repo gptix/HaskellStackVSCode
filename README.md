@@ -52,8 +52,8 @@ $ tree my-project
 └── stack.yaml.lock
 ```
 
-                    - ### Install GHC
-                        - This will install a version of GHC (Glasgow Haskell Compiler). The feedback text will differ.
+### Install GHC
+This will install a version of GHC (Glasgow Haskell Compiler). The feedback text will differ.
                      
 
 ```
@@ -70,8 +70,8 @@ To use this GHC and packages outside of a project, consider using:
 stack ghc, stack ghci, stack runghc, or stack exec
 
 ```
-                    - ### Run GHCI (a REPL interpreter)
-                        - Feedback text will differ slightly.
+### Run GHCI (a REPL interpreter)
+Feedback text will differ slightly.
                         - 
 ```
 $ stack ghci
@@ -80,11 +80,13 @@ GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
 ```
  
  - GHCI will start up, and a REPL prompt will appear.
-                        - `*Main> `
-                    - ### Play Around (then :quit GHCI)
+ 
+
+`*Main> `
+
+### Play Around (then :quit GHCI)
                         - 
 ```
-
 *Main> 17
 17
 *Main> 17 + 42
@@ -95,18 +97,20 @@ True
 $ 
 ```
 
-                    - ### Compile an executable
+### Compile an executable
                         - 
 ```
 $ cd my-project 
 $ stack build
 ```
-                    - ### Execute the executable
+### Execute the executable
                         
 ```
 $ stack exec my-project
-Hello World!```
-        - ## VSCode
+Hello World!
+```
+
+## VSCode
             - https://code.visualstudio.com/
             - ## On Linux
                 - https://code.visualstudio.com/docs/setup/linux
