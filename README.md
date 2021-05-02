@@ -95,7 +95,8 @@ $ stack build
 ```
 ### Execute the executable
                         
-```$ stack exec my-project
+```shell
+$ stack exec my-project
 Hello World!
 ```
 
@@ -129,9 +130,11 @@ Explore the files!
 $ stack exec my-project
 Hello, World!
 ```
-- Voila! 
-                        - **見てご覧！**
-                    - ### From the terminal, load your project into GHCI
+Voila! 
+
+**見てご覧！**
+
+### From the terminal, load your project into GHCI
                     - 
 ```shell
 $ stack ghci
