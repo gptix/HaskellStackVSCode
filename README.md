@@ -54,7 +54,8 @@ $ tree my-project
 
                     - ### Install GHC
                         - This will install a version of GHC (Glasgow Haskell Compiler). The feedback text will differ.
-                        - ```shell
+                     
+
 $ stack setup
 Downloaded lts-3.1 build plan.    
 Caching build plan
