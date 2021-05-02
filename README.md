@@ -80,7 +80,8 @@ GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
 `*Main> `
 
 ### Play Around (then :quit GHCI)
-```*Main> 17
+```shell
+*Main> 17
 17
 *Main> 17 + 42
 59
@@ -149,9 +150,10 @@ Loaded GHCi configuration from /tmp/haskell-stack-ghci/53ae89a3/ghci-script
 ### In GHCI, evaluate a function.
 ```shell
 *Main> main
-Hello, World!```
+Hello, World!
+```
 ### Edit a file, then reload.
-- Change the word **World** to **Mars**
+Change the word **World** to **Mars**
 ```shell
 *Main> :reload
 Ok, one module loaded.
