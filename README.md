@@ -143,16 +143,15 @@ GHCi, version 8.10.4: https://www.haskell.org/ghc/  :? for help
 [1 of 1] Compiling Main             ( /home/gt/Haskell/my-project/src/Main.hs, interpreted )
 Ok, one module loaded.
 Loaded GHCi configuration from /tmp/haskell-stack-ghci/53ae89a3/ghci-script
-*Main> 
+*Main>
 ```
+
 ### In GHCI, evaluate a function.
 ```shell
 *Main> main
-Hello, World!
-```
+Hello, World!```
 ### Edit a file, then reload.
 - Change the word **World** to **Mars**
-- 
 ```shell
 *Main> :reload
 Ok, one module loaded.
