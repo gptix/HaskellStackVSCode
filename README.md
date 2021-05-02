@@ -39,7 +39,7 @@ Using Haskell Stack and VSCode
                             - **my-project** is the name to be used for the topmost folder/directory for the package.
                             - **simple** is the name of a template to use.
                         - This creates te following structure.
-                        - ```
+```
 $ tree my-project
 ./my-project/
 ├── LICENSE
