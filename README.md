@@ -9,37 +9,44 @@ Using Haskell Stack and VSCode
 - ### Script-based install
 - From the website:
 ### How to install
-- - Stack can be installed on most Unix-like (Un*x) operating systems, including macOS, and on Windows.
-- - For most Un*x operating systems, the easiest way to install is to run:
-- - `curl -sSL https://get.haskellstack.org/ | **sh**`
-- - or:
-- - `wget -qO- https://get.haskellstack.org/ | **sh**`
+Stack can be installed on most Unix-like (Un*x) operating systems, including macOS, and on Windows.
+For most Un*x operating systems, the easiest way to install is to run:
+`curl -sSL https://get.haskellstack.org/ | **sh**`
+or:
+`wget -qO- https://get.haskellstack.org/ | **sh**`
 - Alternative, manual installation
--  Installation instructions for generic Linux (incluing Ubuntu)
-- https://docs.haskellstack.org/en/stable/install_and_upgrade/#linux
+Installation instructions for generic Linux (incluing Ubuntu)
+https://docs.haskellstack.org/en/stable/install_and_upgrade/#linux
 - use installer
 - unzip/extract folder to Desktop
-- `mv ~/Desktop/stack-VERSION-NAME ~/.local/bin/` 
-- `cd ~/.local/bin/`
-- `sudo apt-get install g++ gcc libc6-dev libffi-dev libgmp-dev make xz-utils zlib1g-dev git gnupg netbase`
-            - ## Test Install
-- `stack`
-- A couple of pages of stack documentation should appear.
-            - ## Uninstall as necessary
+```shell
+mv ~/Desktop/stack-VERSION-NAME ~/.local/bin/ 
+cd ~/.local/bin/
+sudo apt-get install g++ gcc libc6-dev libffi-dev libgmp-dev make xz-utils zlib1g-dev git gnupg netbase
+```
+
+## Test Install
+`stack`
+A couple of pages of stack documentation should appear.
+## Uninstall as necessary
 - (ref: https://github.com/commercialhaskell/stack/issues/3563)
-- `rm -rf ~/.stack`
-- `rm -rf /usr/.local/bin/stack-VERSION-NAME/`
-- Perhaps also `.stack-work/`  folders in any of your Haskell projects.
-- (https://github.com/commercialhaskell/stack/issues/3563)
+```shell
+rm -rf ~/.stack`
+rm -rf /usr/.local/bin/stack-VERSION-NAME/
+```
+Perhaps also `.stack-work/`  folders in any of your Haskell projects.
+(https://github.com/commercialhaskell/stack/issues/3563)
+
 ## First Project
-- ### Create new project
-- `$ stack new my-project simple`
-- - **stack** is the basic command.
-- - **new** tells stack to create a new set of files.
-- - **my-project** is the name to be used for the topmost folder/directory for the package.
-- - **simple** is the name of a template to use.
-- This creates te following structure.
-```$ tree my-project
+### Create new project
+`$ stack new my-project simple`
+**stack** is the basic command.
+**new** tells stack to create a new set of files.
+**my-project** is the name to be used for the topmost folder/directory for the package.
+**simple** is the name of a template to use.
+This creates te following structure.
+```shell
+$ tree my-project
 ./my-project/
 ├── LICENSE
 ├── my-project.cabal
@@ -55,7 +62,8 @@ Using Haskell Stack and VSCode
 This will install a version of GHC (Glasgow Haskell Compiler). The feedback text will differ.
                      
 
-```$ stack setup
+```shell
+$ stack setup
 Downloaded lts-3.1 build plan.    
 Caching build plan
 Fetched package index.
@@ -70,7 +78,8 @@ stack ghc, stack ghci, stack runghc, or stack exec
 ### Run GHCI (a REPL interpreter)
 Feedback text will differ slightly.
 - 
-```$ stack ghci
+```shell
+$ stack ghci
 Configuring GHCi with the following packages: my-project
 GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
 ```
