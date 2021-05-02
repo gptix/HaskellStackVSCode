@@ -113,8 +113,9 @@ Hello World!
 
 ### Run
 - `$ code`
+- 
 This should launch VS Code
-### install Haskell extensions
+### install Haskell extension
 In VSCode, **View > Extensions**
 Select and install **Haskell Extension Pack**
 ### Open Files in your project
