@@ -111,35 +111,39 @@ Hello World!
 ```
 
 ## VSCode
-            - https://code.visualstudio.com/
-            - ## On Linux
-                - https://code.visualstudio.com/docs/setup/linux
-                - ## On Unbuntu (I know, Ubuntu)
-                    - "The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to download and install the [.deb package (64-bit)](https://go.microsoft.com/fwlink/?LinkID=760868)"
-                    - ### Install
-                        - `$ sudo apt install ./<file>.deb`
-                    - ### Run
-                        - `$ code`
-                        - This should launch VS Code
-                    - ### install Haskell extensions
-                        - In VSCode, **View > Extensions**
-                        - Select and install **sdfs** and **sdfsd**
-                    - ### Open Files in your project
-                        - In VSCode, **View > Explorer**, then **File > Open Folder**
-                        - This will open a file explorer. 
-                        - Navigate to, and select, the top-level folder of your **my-project** package.
-                        - Explore the files!
-                    - ### Open a terminal through VSCode, and run your code using stack exec
-                        - In VSCode, **Terminal > New Terminal**
-                        - This launches a panel with your default shell.
-                        - Navigate to the top directory of your project.
-                        - ```shell
+- https://code.visualstudio.com/
+## On Linux
+- https://code.visualstudio.com/docs/setup/linux
+## On Unbuntu (I know, Ubuntu)
+- "The easiest way to install Visual Studio Code for Debian/Ubuntu based distributions is to download and install the [.deb package (64-bit)](https://go.microsoft.com/fwlink/?LinkID=760868)"
+### Install
+`$ sudo apt install ./<file>.deb`
+
+### Run
+- `$ code`
+This should launch VS Code
+### install Haskell extensions
+In VSCode, **View > Extensions**
+Select and install **sdfs** and **sdfsd**
+### Open Files in your project
+In VSCode, **View > Explorer**, then **File > Open Folder**
+This will open a file explorer. 
+ Navigate to, and select, the top-level folder of your **my-project** package.
+Explore the files!
+### Open a terminal through VSCode, and run your code using stack exec
+- In VSCode, **Terminal > New Terminal**
+- This launches a panel with your default shell.
+- Navigate to the top directory of your project.
+
+```shell
 $ stack exec my-project
-Hello, World!```
-                        - Voila! 
+Hello, World!
+```
+- Voila! 
                         - **見てご覧！**
                     - ### From the terminal, load your project into GHCI
-                    - ```shell
+                    - 
+```shell
 $ stack ghci
 Using main module: 1. Package `my-project' component my-project:exe:my-project with main-is file: /home/gt/Haskell/my-project/src/Main.hs
 Configuring GHCi with the following packages: my-project
@@ -147,28 +151,33 @@ GHCi, version 8.10.4: https://www.haskell.org/ghc/  :? for help
 [1 of 1] Compiling Main             ( /home/gt/Haskell/my-project/src/Main.hs, interpreted )
 Ok, one module loaded.
 Loaded GHCi configuration from /tmp/haskell-stack-ghci/53ae89a3/ghci-script
-*Main> ```
-                    - ### In GHCI, evaluate a function.
-                    - ```shell
+*Main> 
+```
+### In GHCI, evaluate a function.
+```shell
 *Main> main
-Hello, World!```
-                    - ### Edit a file, then reload.
-                    - Change the word **World** to **Mars**
-                    - ```shell
+Hello, World!
+```
+### Edit a file, then reload.
+- Change the word **World** to **Mars**
+- 
+```shell
 *Main> :reload
 Ok, one module loaded.
 *Main> main
-Hello, Mars!```
-                    - ### Assign a value to a variable in a file, then change it in GHCI.
-                    - Add a line `foo = 23` to the file **Main.hs**
-                    - Save the file.
-                    -  In GHCI
-                    - ### In GHCI, evaluate a function
-                    - ```shell
+Hello, Mars!
+```
+### Assign a value to a variable in a file, then change it in GHCI.
+- Add a line `foo = 23` to the file **Main.hs**
+- Save the file.
+-  In GHCI
+- ### In GHCI, evaluate a function
+```shell
 *Main> :reload
 Ok, one module loaded.
 *Main> foo
 23
 *Main> foo = 17
 *Main> foo
-17```
+17
+```
