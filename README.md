@@ -11,8 +11,11 @@ Using Haskell Stack and VSCode
 ### How to install
 Stack can be installed on most Unix-like (Un*x) operating systems, including macOS, and on Windows.
 For most Un*x operating systems, the easiest way to install is to run:
+
 `curl -sSL https://get.haskellstack.org/ | **sh**`
+
 or:
+
 `wget -qO- https://get.haskellstack.org/ | **sh**`
 - Alternative, manual installation
 Installation instructions for generic Linux (incluing Ubuntu)
@@ -121,8 +124,8 @@ Hello World!
 `$ sudo apt install ./<file>.deb`
 
 ### Run
-- `$ code`
-- 
+`$ code`
+
 This should launch VS Code
 ### install Haskell extension
 In VSCode, **View > Extensions**
