@@ -115,7 +115,7 @@ Hello World!
 This should launch VS Code
 ### install Haskell extensions
 In VSCode, **View > Extensions**
-Select and install **sdfs** and **sdfsd**
+Select and install **Haskell Extension Pack**
 ### Open Files in your project
 In VSCode, **View > Explorer**, then **File > Open Folder**
 This will open a file explorer. 
@@ -135,7 +135,6 @@ Voila!
 **見てご覧！**
 
 ### From the terminal, load your project into GHCI
-                    - 
 ```shell
 $ stack ghci
 Using main module: 1. Package `my-project' component my-project:exe:my-project with main-is file: /home/gt/Haskell/my-project/src/Main.hs
