@@ -89,9 +89,7 @@ True
 *Main> :quit
 $ 
 ```
-
 ### Compile an executable
-                        - 
 ```$ cd my-project 
 $ stack build
 ```
