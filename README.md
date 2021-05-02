@@ -80,7 +80,6 @@ GHCi, version 7.10.2: http://www.haskell.org/ghc/  :? for help
 `*Main> `
 
 ### Play Around (then :quit GHCI)
-                        - 
 ```*Main> 17
 17
 *Main> 17 + 42
