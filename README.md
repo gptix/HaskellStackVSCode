@@ -9,7 +9,7 @@ Website:  https://docs.haskellstack.org/en/stable/README/
 #### Script-based install
 From the website:
 **How to install**
-Stack can be installed on most Unix-like (Un*x) operating systems, including macOS, and on Windows.
+Stack can be installed on most Unix-like (Un\*x) operating systems, including macOS, and on Windows.
 For most Un*x operating systems, the easiest way to install is to run:
 
 `curl -sSL https://get.haskellstack.org/ | **sh**`
