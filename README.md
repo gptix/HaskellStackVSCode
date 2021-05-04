@@ -176,7 +176,6 @@ Hello, Mars!
 - Add a line `foo = 23` to the file **Main.hs**
 - Save the file.
 -  In GHCI
-- ### Load from a file into GHCI, then modify a value.
 ```shell
 *Main> :reload
 Ok, one module loaded.
