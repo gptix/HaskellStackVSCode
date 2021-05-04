@@ -30,6 +30,7 @@ sudo apt-get install g++ gcc libc6-dev libffi-dev libgmp-dev make xz-utils zlib1
 
 ## Test Install
 `stack`
+
 A couple of pages of stack documentation should appear.
 ## Uninstall as necessary
 - (ref: https://github.com/commercialhaskell/stack/issues/3563)
@@ -43,10 +44,15 @@ Perhaps also `.stack-work/`  folders in any of your Haskell projects.
 ### First Project
 #### Create new project
 `$ stack new my-project simple`
+
 **stack** is the basic command.
+
 **new** tells stack to create a new set of files.
+
 **my-project** is the name to be used for the topmost folder/directory for the package.
+
 **simple** is the name of a template to use.
+
 This creates te following structure.
 ```shell
 $ tree my-project
